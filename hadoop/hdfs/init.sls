@@ -150,7 +150,7 @@ hdfs-services:
     - enable: True
     - names:
 {%- if 'hadoop_master' in all_roles %}
-      - hadoop-secondarynamenode
+#      - hadoop-secondarynamenode
       - hadoop-namenode
 {% endif %}
 {%- if 'hadoop_slave' in all_roles %}
